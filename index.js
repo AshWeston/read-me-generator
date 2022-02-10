@@ -5,20 +5,10 @@ const createReadMe = require("./generateMarkdown");
 
 const generateFile = util.promisify(fs.writeFile);
 
-// .then((answers) => {
-//     writeToFile(answers);
-//     console.log(answers);
-//   });
-
-// const writeToFile = (answers) => {
-//   generateFile ("README.md", createReadMe(answers));
-// };
-// };
-
 const prompt = () => {
   inquirer
     .prompt([
-      /* Pass your questions in here */
+      /* Pass questions in here */
       {
         type: "input",
         name: "title",
