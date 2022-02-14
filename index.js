@@ -60,6 +60,17 @@ const prompt = () => {
         name: "contributing",
         message: "How can users contribute to this project?",
       },
+
+      {
+        type: "input",
+        name: "github",
+        message: "What is your GitHub username?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your email address?",
+      },
     ])
     .then((answers) => {
       writeToFile(answers);

@@ -12,6 +12,7 @@ function generateMarkdown(answers) {
   4. [Features](#Features)
   5. [Tests](#Tests)
   6. [Contributing](#Contributing)
+  7. [Questions] (#Questions)
   
   ## Installation
   ${answers.installation}
@@ -25,6 +26,10 @@ function generateMarkdown(answers) {
   ${answers.tests}
   ## Contributing
   ${answers.contributing}
+  ## Questions
+
+  If you have any further questions about this project, please feel free to reach out on 
+[GitHub Account](https://github.com/${answers.github}) or on my [email](mailto:${answers.email}).
   
 `;
 }
