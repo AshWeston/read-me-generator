@@ -31,7 +31,7 @@ Apache License 2.0 [![License](https://img.shields.io/badge/License-Apache_2.0-b
 
 ## Video-Walkthrough
 
-<iframe src="https://drive.google.com/file/d/1QWaJdg4wshyjGEDKXDbG7uWzpOfjotg9/preview" width="640" height="480"></iframe>
+![Read Me walk through](walkthrough.webm)
 
 ## Contributing
 
