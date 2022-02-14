@@ -2,6 +2,7 @@ function generateMarkdown(answers) {
   return `
   ## Title
   ${answers.title}
+  ${answers.license}
   ## Description 
   ${answers.description}
   

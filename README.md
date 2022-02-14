@@ -1,8 +1,9 @@
 
   ## Title
-  Test
+  test
+  GNU LGPLv3 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
   ## Description 
-  Test
+  test
   
   ## Table of Contents
   1. [Installation](#Installation)
@@ -13,17 +14,17 @@
   7. [Questions](#Questions)
   
   ## Installation
-  Test
+  test
   ## Usage
-  Test
+  test
   ## License
   GNU LGPLv3 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
   ## Tests
-  Test
+  test
   ## Contributing
-  Test
+  test
   ## Questions
 
   If you have any questions, or additional feedback, please feel free to reach out on my 
-GitHub Account: (https://github.com/Test) or send me an email at Test.
+GitHub Account: (https://github.com/test) or send me an email at test.
   
