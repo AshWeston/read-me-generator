@@ -25,6 +25,8 @@ Begin using the application with the command "node index.js". Answer the prompts
 
 ## License
 
+(Please note - this is an example only for the purpose of this project, and does not use the below license.)
+
 This project operates under the following license:
 
 Apache License 2.0 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
