@@ -84,6 +84,9 @@ function generateMarkdown(answers) {
   ## Usage
   ${answers.usage}
   ## License
+
+  This project operates under the following license:
+  
   ${answers.license}
   ## Tests
   ${answers.tests}
