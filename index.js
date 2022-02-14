@@ -67,6 +67,7 @@ const prompt = () => {
         message: "What is your email address?",
       },
     ])
+
     .then((answers) => {
       writeToFile(answers);
       console.log(answers);

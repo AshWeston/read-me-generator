@@ -1,11 +1,12 @@
 function generateMarkdown(answers) {
+  let licenseOption = `${answers.license}`;
   let badge;
-  if (answers.license === "None") {
+  if (licenseOption === "None") {
     badge = "";
     return badge;
   }
   if (
-    answers.license ===
+    licenseOption ===
     "GNU AGPLv3 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)"
   ) {
     badge =
@@ -14,7 +15,7 @@ function generateMarkdown(answers) {
   }
 
   if (
-    answers.license ===
+    licenseOption ===
     "GNU GPLv3 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
   ) {
     badge =
@@ -23,7 +24,7 @@ function generateMarkdown(answers) {
   }
 
   if (
-    answers.license ===
+    licenseOption ===
     "GNU LGPLv3 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)"
   ) {
     badge =
@@ -32,7 +33,7 @@ function generateMarkdown(answers) {
   }
 
   if (
-    answers.license ===
+    licenseOption ===
     "Mozilla Public License 2.0 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
   ) {
     badge =
@@ -40,7 +41,7 @@ function generateMarkdown(answers) {
     return badge;
   }
   if (
-    answers.license ===
+    licenseOption ===
     "Apache License 2.0 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
   ) {
     badge =
@@ -48,7 +49,7 @@ function generateMarkdown(answers) {
     return badge;
   }
   if (
-    answers.license ===
+    licenseOption ===
     "MIT License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   ) {
     badge =
@@ -56,7 +57,7 @@ function generateMarkdown(answers) {
     return badge;
   }
   if (
-    answers.license ===
+    licenseOption ===
     "Boost Software License 1.0 [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
   ) {
     badge =
@@ -64,21 +65,19 @@ function generateMarkdown(answers) {
     return badge;
   }
   if (
-    answers.license ===
+    licenseOption ===
     "The Unlicense [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
   ) {
     badge =
       "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
     return badge;
   }
-  if (answers.license === "Other") {
+  if (licenseOption === "Other") {
     badge = "";
     return badge;
   }
 
-  return `
-  ${badge}
-  ## ${answers.title}
+  return `## ${answers.title}
   ## Description 
   ${answers.description}
   
@@ -107,5 +106,4 @@ GitHub Account: (https://github.com/${answers.github}) or send me an email at ${
   
 `;
 }
-
 module.exports = generateMarkdown;
