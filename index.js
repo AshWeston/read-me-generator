@@ -47,11 +47,6 @@ const prompt = () => {
       },
       {
         type: "input",
-        name: "features",
-        message: "List the features of your project.",
-      },
-      {
-        type: "input",
         name: "tests",
         message: "Give test instructions for your application.",
       },

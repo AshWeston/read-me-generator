@@ -1,4 +1,6 @@
 function generateMarkdown(answers) {
+
+  
   return `
   ## Title
   ${answers.title}
@@ -9,7 +11,6 @@ function generateMarkdown(answers) {
   1. [Installation](#Installation)
   2. [Usage](#Usage)
   3. [License](#License)
-  4. [Features](#Features)
   5. [Tests](#Tests)
   6. [Contributing](#Contributing)
   7. [Questions] (#Questions)
@@ -20,16 +21,14 @@ function generateMarkdown(answers) {
   ${answers.usage}
   ## License
   ${answers.license}
-  ## Features
-  ${answers.features}
   ## Tests
   ${answers.tests}
   ## Contributing
   ${answers.contributing}
   ## Questions
 
-  If you have any further questions about this project, please feel free to reach out on 
-[GitHub Account](https://github.com/${answers.github}) or on my [email](mailto:${answers.email}).
+  If you have any questions, or additional feedback, please feel free to reach out on my 
+[GitHub Account: https://github.com/${answers.github}](https://github.com/${answers.github}) or send me an email at [email](mailto:${answers.email}): ${answers.email}.
   
 `;
 }
