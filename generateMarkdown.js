@@ -1,17 +1,12 @@
 function generateMarkdown(answers) {
   let licenseOption = `${answers.license}`;
   let badge;
-  if (licenseOption === "None") {
-    badge = "";
-    return badge;
-  }
   if (
     licenseOption ===
     "GNU AGPLv3 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)"
   ) {
     badge =
       "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
-    return badge;
   }
 
   if (
@@ -20,7 +15,6 @@ function generateMarkdown(answers) {
   ) {
     badge =
       "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-    return badge;
   }
 
   if (
@@ -29,7 +23,6 @@ function generateMarkdown(answers) {
   ) {
     badge =
       "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
-    return badge;
   }
 
   if (
@@ -38,7 +31,6 @@ function generateMarkdown(answers) {
   ) {
     badge =
       "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
-    return badge;
   }
   if (
     licenseOption ===
@@ -46,7 +38,6 @@ function generateMarkdown(answers) {
   ) {
     badge =
       "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-    return badge;
   }
   if (
     licenseOption ===
@@ -54,7 +45,6 @@ function generateMarkdown(answers) {
   ) {
     badge =
       "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-    return badge;
   }
   if (
     licenseOption ===
@@ -62,7 +52,6 @@ function generateMarkdown(answers) {
   ) {
     badge =
       "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
-    return badge;
   }
   if (
     licenseOption ===
@@ -70,14 +59,15 @@ function generateMarkdown(answers) {
   ) {
     badge =
       "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
-    return badge;
   }
   if (licenseOption === "Other") {
     badge = "";
-    return badge;
   }
 
-  return `## ${answers.title}
+  return ` 
+
+  ${badge}
+  ## ${answers.title}
   ## Description 
   ${answers.description}
   
@@ -106,4 +96,5 @@ GitHub Account: (https://github.com/${answers.github}) or send me an email at ${
   
 `;
 }
+
 module.exports = generateMarkdown;
